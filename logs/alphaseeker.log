@@ -1,0 +1,267 @@
+2025-10-27 19:44:19,220 - main_integration - INFO - 📝 日志系统初始化完成
+2025-10-27 19:44:19,220 - main_integration - INFO - 🚀 启动 AlphaSeeker v1.0.0
+2025-10-27 19:44:19,220 - main_integration - INFO - 🚀 开始初始化AlphaSeeker组件...
+2025-10-27 19:44:19,220 - main_integration - INFO - 🧠 初始化机器学习引擎...
+2025-10-27 19:44:19,220 - main_integration - ERROR - ❌ 组件初始化失败: name 'AlphaSeekerMLEngine' is not defined
+2025-10-27 19:44:19,220 - main_integration - ERROR - Traceback (most recent call last):
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 722, in initialize_components
+    self.ml_engine = AlphaSeekerMLEngine(
+NameError: name 'AlphaSeekerMLEngine' is not defined
+
+2025-10-27 19:44:19,220 - main_integration - ERROR - ❌ 系统启动失败: name 'AlphaSeekerMLEngine' is not defined
+2025-10-27 19:44:19,220 - main_integration - ERROR - Traceback (most recent call last):
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 825, in start
+    await self.initialize_components()
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 722, in initialize_components
+    self.ml_engine = AlphaSeekerMLEngine(
+NameError: name 'AlphaSeekerMLEngine' is not defined
+
+2025-10-27 19:44:19,220 - main_integration - INFO - 🛑 正在停止AlphaSeeker系统...
+2025-10-27 19:44:19,220 - main_integration - INFO - ✅ AlphaSeeker系统已停止
+2025-10-27 20:32:03,614 - main_integration - INFO - 📝 日志系统初始化完成
+2025-10-27 20:32:03,614 - main_integration - INFO - 🚀 启动 AlphaSeeker v1.0.0
+2025-10-27 20:32:03,614 - main_integration - INFO - 🚀 开始初始化AlphaSeeker组件...
+2025-10-27 20:32:03,615 - main_integration - INFO - 🧠 初始化机器学习引擎...
+2025-10-27 20:32:03,615 - main_integration - ERROR - ❌ 组件初始化失败: 'NoneType' object has no attribute 'get'
+2025-10-27 20:32:03,615 - main_integration - ERROR - Traceback (most recent call last):
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 722, in initialize_components
+    self.ml_engine = AlphaSeekerMLEngine(
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 1374, in __init__
+    self.feature_config = config.get('feature_engineering', {
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2025-10-27 20:32:03,615 - main_integration - ERROR - ❌ 系统启动失败: 'NoneType' object has no attribute 'get'
+2025-10-27 20:32:03,615 - main_integration - ERROR - Traceback (most recent call last):
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 825, in start
+    await self.initialize_components()
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 722, in initialize_components
+    self.ml_engine = AlphaSeekerMLEngine(
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 1374, in __init__
+    self.feature_config = config.get('feature_engineering', {
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2025-10-27 20:32:03,615 - main_integration - INFO - 🛑 正在停止AlphaSeeker系统...
+2025-10-27 20:32:03,615 - main_integration - INFO - ✅ AlphaSeeker系统已停止
+2025-10-27 20:48:14,170 - main_integration - INFO - 📝 日志系统初始化完成
+2025-10-27 20:48:14,170 - main_integration - INFO - 🚀 启动 AlphaSeeker v1.0.0
+2025-10-27 20:48:14,170 - main_integration - INFO - 🚀 开始初始化AlphaSeeker组件...
+2025-10-27 20:48:14,170 - main_integration - INFO - 🧠 初始化机器学习引擎...
+2025-10-27 20:48:14,170 - main_integration - ERROR - ❌ 组件初始化失败: 'NoneType' object has no attribute 'get'
+2025-10-27 20:48:14,170 - main_integration - ERROR - Traceback (most recent call last):
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 747, in initialize_components
+    self.ml_engine = AlphaSeekerMLEngine(
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 1399, in __init__
+    self.feature_config = config.get('feature_engineering', {
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2025-10-27 20:48:14,170 - main_integration - ERROR - ❌ 系统启动失败: 'NoneType' object has no attribute 'get'
+2025-10-27 20:48:14,170 - main_integration - ERROR - Traceback (most recent call last):
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 850, in start
+    await self.initialize_components()
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 747, in initialize_components
+    self.ml_engine = AlphaSeekerMLEngine(
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 1399, in __init__
+    self.feature_config = config.get('feature_engineering', {
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2025-10-27 20:48:14,170 - main_integration - INFO - 🛑 正在停止AlphaSeeker系统...
+2025-10-27 20:48:14,170 - main_integration - INFO - ✅ AlphaSeeker系统已停止
+2025-10-27 20:56:46,475 - main_integration - INFO - 📝 日志系统初始化完成
+2025-10-27 20:56:46,475 - main_integration - INFO - 🚀 启动 AlphaSeeker v1.0.0
+2025-10-27 20:56:46,475 - main_integration - INFO - 🚀 开始初始化AlphaSeeker组件...
+2025-10-27 20:56:46,475 - main_integration - INFO - 🧠 初始化机器学习引擎...
+2025-10-27 20:56:46,476 - main_integration - ERROR - ❌ 组件初始化失败: 'NoneType' object has no attribute 'get'
+2025-10-27 20:56:46,476 - main_integration - ERROR - Traceback (most recent call last):
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 824, in initialize_components
+    self.ml_engine = AlphaSeekerMLEngine(
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 1476, in __init__
+    self.feature_config = config.get('feature_engineering', {
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2025-10-27 20:56:46,476 - main_integration - ERROR - ❌ 系统启动失败: 'NoneType' object has no attribute 'get'
+2025-10-27 20:56:46,476 - main_integration - ERROR - Traceback (most recent call last):
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 927, in start
+    await self.initialize_components()
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 824, in initialize_components
+    self.ml_engine = AlphaSeekerMLEngine(
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 1476, in __init__
+    self.feature_config = config.get('feature_engineering', {
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2025-10-27 20:56:46,476 - main_integration - INFO - 🛑 正在停止AlphaSeeker系统...
+2025-10-27 20:56:46,476 - main_integration - INFO - ✅ AlphaSeeker系统已停止
+2025-10-27 21:31:18,280 - main_integration - INFO - 📝 日志系统初始化完成
+2025-10-27 21:31:18,280 - main_integration - INFO - 🚀 启动 AlphaSeeker v1.0.0
+2025-10-27 21:31:18,280 - main_integration - INFO - 🚀 开始初始化AlphaSeeker组件...
+2025-10-27 21:31:18,280 - main_integration - INFO - 🧠 初始化机器学习引擎...
+2025-10-27 21:31:18,280 - main_integration - INFO - 🧠 AlphaSeekerMLEngine初始化完成
+2025-10-27 21:31:18,280 - main_integration - INFO - 📦 尝试加载LightGBM模型...
+2025-10-27 21:31:18,281 - main_integration - ERROR - ❌ 模型加载失败: LGBMClassifier.fit() got an unexpected keyword argument 'verbose'
+2025-10-27 21:31:18,281 - main_integration - ERROR - ❌ 组件初始化失败: 'ModelHealthStatus' object is not subscriptable
+2025-10-27 21:31:18,281 - main_integration - ERROR - Traceback (most recent call last):
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 833, in initialize_components
+    self.logger.info(f"ML引擎状态: {ml_health['overall_status']}")
+TypeError: 'ModelHealthStatus' object is not subscriptable
+
+2025-10-27 21:31:18,281 - main_integration - ERROR - ❌ 系统启动失败: 'ModelHealthStatus' object is not subscriptable
+2025-10-27 21:31:18,281 - main_integration - ERROR - Traceback (most recent call last):
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 935, in start
+    await self.initialize_components()
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 833, in initialize_components
+    self.logger.info(f"ML引擎状态: {ml_health['overall_status']}")
+TypeError: 'ModelHealthStatus' object is not subscriptable
+
+2025-10-27 21:31:18,281 - main_integration - INFO - 🛑 正在停止AlphaSeeker系统...
+2025-10-27 21:31:18,281 - main_integration - INFO - ✅ AlphaSeeker系统已停止
+2025-10-27 21:35:25,031 - main_integration - INFO - 📝 日志系统初始化完成
+2025-10-27 21:35:25,031 - main_integration - INFO - 🚀 启动 AlphaSeeker v1.0.0
+2025-10-27 21:35:25,031 - main_integration - INFO - 🚀 开始初始化AlphaSeeker组件...
+2025-10-27 21:35:25,031 - main_integration - INFO - 🧠 初始化机器学习引擎...
+2025-10-27 21:35:25,031 - main_integration - INFO - 🧠 AlphaSeekerMLEngine初始化完成
+2025-10-27 21:35:25,031 - main_integration - INFO - 📦 尝试加载LightGBM模型...
+2025-10-27 21:35:25,074 - main_integration - INFO - ✅ LightGBM模型加载成功
+2025-10-27 21:35:25,074 - main_integration - INFO - ML引擎状态: healthy
+2025-10-27 21:35:25,074 - main_integration - INFO - 🔍 初始化双重验证器...
+2025-10-27 21:35:25,074 - main_integration - ERROR - ❌ 组件初始化失败: name 'ValidationConfig' is not defined
+2025-10-27 21:35:25,074 - main_integration - ERROR - Traceback (most recent call last):
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 837, in initialize_components
+    validation_config = ValidationConfig(**self.config.validation_config)
+NameError: name 'ValidationConfig' is not defined
+
+2025-10-27 21:35:25,074 - main_integration - ERROR - ❌ 系统启动失败: name 'ValidationConfig' is not defined
+2025-10-27 21:35:25,074 - main_integration - ERROR - Traceback (most recent call last):
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 935, in start
+    await self.initialize_components()
+  File "/home/eas006/alphaseekerBot/main_integration.py", line 837, in initialize_components
+    validation_config = ValidationConfig(**self.config.validation_config)
+NameError: name 'ValidationConfig' is not defined
+
+2025-10-27 21:35:25,074 - main_integration - INFO - 🛑 正在停止AlphaSeeker系统...
+2025-10-27 21:35:25,074 - main_integration - INFO - ✅ AlphaSeeker系统已停止
+2025-10-27 22:37:06,137 - main_integration - INFO - 📝 日志系统初始化完成
+2025-10-27 22:37:06,137 - main_integration - INFO - 🚀 启动 AlphaSeeker v1.0.0
+2025-10-27 22:37:06,137 - main_integration - INFO - 🚀 开始初始化AlphaSeeker组件...
+2025-10-27 22:37:06,137 - main_integration - INFO - 🧠 初始化机器学习引擎...
+2025-10-27 22:37:06,138 - main_integration - INFO - 🧠 AlphaSeekerMLEngine初始化完成
+2025-10-27 22:37:06,138 - main_integration - INFO - 📦 尝试加载LightGBM模型...
+2025-10-27 22:37:06,165 - main_integration - INFO - ✅ LightGBM模型加载成功
+2025-10-27 22:37:06,165 - main_integration - INFO - ML引擎状态: healthy
+2025-10-27 22:37:06,165 - main_integration - INFO - 🔍 初始化双重验证器...
+2025-10-27 22:37:06,165 - main_integration - INFO - SignalValidationCoordinator初始化完成
+2025-10-27 22:37:06,165 - main_integration - INFO - ⚙️ 初始化多策略管道...
+2025-10-27 22:37:06,165 - main_integration - INFO - MultiStrategyPipeline初始化完成
+2025-10-27 22:37:06,165 - main_integration - INFO - 多策略管道启动完成
+2025-10-27 22:37:06,165 - main_integration - INFO - 📊 初始化市场扫描器...
+2025-10-27 22:37:06,165 - main_integration - INFO - MarketScanner初始化完成
+2025-10-27 22:37:06,165 - main_integration - INFO - ✅ 所有组件初始化完成
+2025-10-27 22:37:06,165 - main_integration - INFO - ✅ AlphaSeeker系统启动完成
+2025-10-27 22:39:34,827 - main_integration - INFO - 🛑 正在停止AlphaSeeker系统...
+2025-10-27 22:39:34,827 - main_integration - ERROR - ❌ 停止系统时出错: 'MultiStrategyPipeline' object has no attribute 'stop'
+2025-10-27 22:41:57,368 - main_integration - INFO - 📝 日志系统初始化完成
+2025-10-27 22:41:57,368 - main_integration - INFO - 🚀 启动 AlphaSeeker v1.0.0
+2025-10-27 22:41:57,368 - main_integration - INFO - 🚀 开始初始化AlphaSeeker组件...
+2025-10-27 22:41:57,368 - main_integration - INFO - 🧠 初始化机器学习引擎...
+2025-10-27 22:41:57,369 - main_integration - INFO - 🧠 AlphaSeekerMLEngine初始化完成
+2025-10-27 22:41:57,369 - main_integration - INFO - 📦 尝试加载LightGBM模型...
+2025-10-27 22:41:57,395 - main_integration - INFO - ✅ LightGBM模型加载成功
+2025-10-27 22:41:57,395 - main_integration - INFO - ML引擎状态: healthy
+2025-10-27 22:41:57,395 - main_integration - INFO - 🔍 初始化双重验证器...
+2025-10-27 22:41:57,395 - main_integration - INFO - SignalValidationCoordinator初始化完成
+2025-10-27 22:41:57,395 - main_integration - INFO - ⚙️ 初始化多策略管道...
+2025-10-27 22:41:57,395 - main_integration - INFO - MultiStrategyPipeline初始化完成
+2025-10-27 22:41:57,395 - main_integration - INFO - 多策略管道启动完成
+2025-10-27 22:41:57,395 - main_integration - INFO - 📊 初始化市场扫描器...
+2025-10-27 22:41:57,395 - main_integration - INFO - MarketScanner初始化完成
+2025-10-27 22:41:57,395 - main_integration - INFO - ✅ 所有组件初始化完成
+2025-10-27 22:41:57,395 - main_integration - INFO - ✅ AlphaSeeker系统启动完成
+2025-10-27 22:43:42,092 - main_integration - INFO - 🛑 正在停止AlphaSeeker系统...
+2025-10-27 22:43:42,092 - main_integration - ERROR - ❌ 停止系统时出错: 'MultiStrategyPipeline' object has no attribute 'stop'
+2025-10-27 22:49:54,094 - main_integration - INFO - 📝 日志系统初始化完成
+2025-10-27 22:49:54,094 - main_integration - INFO - 🚀 启动 AlphaSeeker v1.0.0
+2025-10-27 22:49:54,094 - main_integration - INFO - 🚀 开始初始化AlphaSeeker组件...
+2025-10-27 22:49:54,094 - main_integration - INFO - 🧠 初始化机器学习引擎...
+2025-10-27 22:49:54,094 - main_integration - INFO - 🧠 AlphaSeekerMLEngine初始化完成
+2025-10-27 22:49:54,094 - main_integration - INFO - 📦 尝试加载LightGBM模型...
+2025-10-27 22:49:54,115 - main_integration - INFO - ✅ LightGBM模型加载成功
+2025-10-27 22:49:54,115 - main_integration - INFO - ML引擎状态: healthy
+2025-10-27 22:49:54,116 - main_integration - INFO - 🔍 初始化双重验证器...
+2025-10-27 22:49:54,116 - main_integration - INFO - SignalValidationCoordinator初始化完成
+2025-10-27 22:49:54,116 - main_integration - INFO - ⚙️ 初始化多策略管道...
+2025-10-27 22:49:54,116 - main_integration - INFO - MultiStrategyPipeline初始化完成
+2025-10-27 22:49:54,116 - main_integration - INFO - 多策略管道启动完成
+2025-10-27 22:49:54,116 - main_integration - INFO - 📊 初始化市场扫描器...
+2025-10-27 22:49:54,116 - main_integration - INFO - MarketScanner初始化完成
+2025-10-27 22:49:54,116 - main_integration - INFO - ✅ 所有组件初始化完成
+2025-10-27 22:49:54,116 - main_integration - INFO - ✅ AlphaSeeker系统启动完成
+2025-10-27 22:51:43,675 - main_integration - INFO - 🛑 正在停止AlphaSeeker系统...
+2025-10-27 22:51:43,675 - main_integration - ERROR - ❌ 停止系统时出错: 'MultiStrategyPipeline' object has no attribute 'stop'
+2025-10-27 22:52:49,969 - main_integration - INFO - 📝 日志系统初始化完成
+2025-10-27 22:52:49,969 - main_integration - INFO - 🚀 启动 AlphaSeeker v1.0.0
+2025-10-27 22:52:49,969 - main_integration - INFO - 🚀 开始初始化AlphaSeeker组件...
+2025-10-27 22:52:49,969 - main_integration - INFO - 🧠 初始化机器学习引擎...
+2025-10-27 22:52:49,969 - main_integration - INFO - 🧠 AlphaSeekerMLEngine初始化完成
+2025-10-27 22:52:49,969 - main_integration - INFO - 📦 尝试加载LightGBM模型...
+2025-10-27 22:52:49,988 - main_integration - INFO - ✅ LightGBM模型加载成功
+2025-10-27 22:52:49,989 - main_integration - INFO - ML引擎状态: healthy
+2025-10-27 22:52:49,989 - main_integration - INFO - 🔍 初始化双重验证器...
+2025-10-27 22:52:49,989 - main_integration - INFO - SignalValidationCoordinator初始化完成
+2025-10-27 22:52:49,989 - main_integration - INFO - ⚙️ 初始化多策略管道...
+2025-10-27 22:52:49,989 - main_integration - INFO - MultiStrategyPipeline初始化完成
+2025-10-27 22:52:49,989 - main_integration - INFO - 多策略管道启动完成
+2025-10-27 22:52:49,989 - main_integration - INFO - 📊 初始化市场扫描器...
+2025-10-27 22:52:49,989 - main_integration - INFO - MarketScanner初始化完成
+2025-10-27 22:52:49,989 - main_integration - INFO - ✅ 所有组件初始化完成
+2025-10-27 22:52:49,989 - main_integration - INFO - ✅ AlphaSeeker系统启动完成
+2025-10-27 22:56:07,772 - main_integration - INFO - 🛑 正在停止AlphaSeeker系统...
+2025-10-27 22:56:07,772 - main_integration - ERROR - ❌ 停止系统时出错: 'MultiStrategyPipeline' object has no attribute 'stop'
+2025-10-27 22:56:14,171 - main_integration - INFO - 📝 日志系统初始化完成
+2025-10-27 22:56:14,171 - main_integration - INFO - 🚀 启动 AlphaSeeker v1.0.0
+2025-10-27 22:56:14,172 - main_integration - INFO - 🚀 开始初始化AlphaSeeker组件...
+2025-10-27 22:56:14,172 - main_integration - INFO - 🧠 初始化机器学习引擎...
+2025-10-27 22:56:14,172 - main_integration - INFO - 🧠 AlphaSeekerMLEngine初始化完成
+2025-10-27 22:56:14,172 - main_integration - INFO - 📦 尝试加载LightGBM模型...
+2025-10-27 22:56:14,189 - main_integration - INFO - ✅ LightGBM模型加载成功
+2025-10-27 22:56:14,189 - main_integration - INFO - ML引擎状态: healthy
+2025-10-27 22:56:14,189 - main_integration - INFO - 🔍 初始化双重验证器...
+2025-10-27 22:56:14,189 - main_integration - INFO - SignalValidationCoordinator初始化完成
+2025-10-27 22:56:14,189 - main_integration - INFO - ⚙️ 初始化多策略管道...
+2025-10-27 22:56:14,189 - main_integration - INFO - MultiStrategyPipeline初始化完成
+2025-10-27 22:56:14,189 - main_integration - INFO - 多策略管道启动完成
+2025-10-27 22:56:14,189 - main_integration - INFO - 📊 初始化市场扫描器...
+2025-10-27 22:56:14,189 - main_integration - INFO - MarketScanner初始化完成
+2025-10-27 22:56:14,189 - main_integration - INFO - ✅ 所有组件初始化完成
+2025-10-27 22:56:14,189 - main_integration - INFO - ✅ AlphaSeeker系统启动完成
+2025-10-27 23:11:37,914 - main_integration - INFO - 📝 日志系统初始化完成
+2025-10-27 23:11:37,914 - main_integration - INFO - 🚀 启动 AlphaSeeker v1.0.0
+2025-10-27 23:11:37,914 - main_integration - INFO - 🚀 开始初始化AlphaSeeker组件...
+2025-10-27 23:11:37,914 - main_integration - INFO - 🧠 初始化机器学习引擎...
+2025-10-27 23:11:37,914 - main_integration - INFO - 🧠 AlphaSeekerMLEngine初始化完成
+2025-10-27 23:11:37,914 - main_integration - INFO - 📦 尝试加载LightGBM模型...
+2025-10-27 23:11:37,933 - main_integration - INFO - ✅ LightGBM模型加载成功
+2025-10-27 23:11:37,933 - main_integration - INFO - ML引擎状态: healthy
+2025-10-27 23:11:37,933 - main_integration - INFO - 🔍 初始化双重验证器...
+2025-10-27 23:11:37,933 - main_integration - INFO - SignalValidationCoordinator初始化完成
+2025-10-27 23:11:37,933 - main_integration - INFO - ⚙️ 初始化多策略管道...
+2025-10-27 23:11:37,933 - main_integration - INFO - MultiStrategyPipeline初始化完成
+2025-10-27 23:11:37,933 - main_integration - INFO - 多策略管道启动完成
+2025-10-27 23:11:37,933 - main_integration - INFO - 📊 初始化市场扫描器...
+2025-10-27 23:11:37,933 - main_integration - INFO - MarketScanner初始化完成
+2025-10-27 23:11:37,933 - main_integration - INFO - ✅ 所有组件初始化完成
+2025-10-27 23:11:37,933 - main_integration - INFO - ✅ AlphaSeeker系统启动完成
+2025-10-27 23:19:17,156 - main_integration - INFO - 📝 日志系统初始化完成
+2025-10-27 23:19:17,156 - main_integration - INFO - 🚀 启动 AlphaSeeker v1.0.0
+2025-10-27 23:19:17,156 - main_integration - INFO - 🚀 开始初始化AlphaSeeker组件...
+2025-10-27 23:19:17,156 - main_integration - INFO - 🧠 初始化机器学习引擎...
+2025-10-27 23:19:17,156 - main_integration - INFO - 🧠 AlphaSeekerMLEngine初始化完成
+2025-10-27 23:19:17,156 - main_integration - INFO - 📦 尝试加载LightGBM模型...
+2025-10-27 23:19:17,166 - main_integration - INFO - ✅ LightGBM模型加载成功
+2025-10-27 23:19:17,166 - main_integration - INFO - ML引擎状态: healthy
+2025-10-27 23:19:17,166 - main_integration - INFO - 🔍 初始化双重验证器...
+2025-10-27 23:19:17,166 - main_integration - INFO - SignalValidationCoordinator初始化完成
+2025-10-27 23:19:17,166 - main_integration - INFO - ⚙️ 初始化多策略管道...
+2025-10-27 23:19:17,166 - main_integration - INFO - MultiStrategyPipeline初始化完成
+2025-10-27 23:19:17,166 - main_integration - INFO - 多策略管道启动完成
+2025-10-27 23:19:17,166 - main_integration - INFO - 📊 初始化市场扫描器...
+2025-10-27 23:19:17,166 - main_integration - INFO - MarketScanner初始化完成
+2025-10-27 23:19:17,166 - main_integration - INFO - ✅ 所有组件初始化完成
+2025-10-27 23:19:17,166 - main_integration - INFO - ✅ AlphaSeeker系统启动完成
