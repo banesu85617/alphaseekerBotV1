@@ -1,0 +1,95 @@
+# 双重验证机制配置文件示例
+
+# 基础配置
+base_config:
+  max_concurrent_tasks: 16
+  max_queue_size: 1000
+  batch_size: 50
+  min_combined_score: 0.5
+  min_confidence_level: 0.65
+  risk_reward_threshold: 1.0
+  cache_ttl_seconds: 300
+  enable_caching: true
+  cache_size_limit: 10000
+  worker_pool_size: 4
+  enable_priority_queue: true
+  priority_queue_size: 100
+  rate_limit_per_minute: 100
+  max_requests_per_hour: 1000
+  enable_authentication: false
+  logging_level: "INFO"
+  log_to_file: false
+  log_file_path: "logs/validation.log"
+  environment: "development"
+  debug_mode: false
+
+# LightGBM配置
+lgbm_config:
+  model_path: "models/lightgbm_model.txt"
+  probability_threshold: 0.65
+  confidence_threshold: 0.6
+  require_direction: true
+  batch_size: 100
+  prediction_timeout: 2.0
+  feature_normalization: true
+  outlier_handling: true
+  missing_value_strategy: "median"
+
+# LLM配置
+llm_config:
+  provider: "ollama"
+  base_url: "http://localhost:11434"
+  model_name: "llama2"
+  api_key: null
+  timeout: 30.0
+  max_retries: 3
+  retry_delay: 1.0
+  temperature: 0.3
+  max_tokens: 1024
+  top_p: 0.9
+  min_confidence: 0.65
+  output_constraints:
+    required_fields: ["direction", "entry", "stop_loss", "take_profit", "confidence"]
+    valid_directions: ["long", "short", "hold"]
+    min_confidence: 0.65
+
+# 融合算法配置
+fusion_config:
+  strategy: "equal_weight"
+  layer1_weight: 0.3
+  layer2_weight: 0.4
+  technical_indicators_weight: 0.15
+  risk_context_weight: 0.15
+  risk_reward_threshold: 1.0
+  confidence_threshold: 0.65
+  minimum_score_threshold: 0.5
+  performance_history_window: 100
+  adaptation_rate: 0.05
+  enable_dynamic_weights: true
+  volatility_adjustment: true
+  liquidity_adjustment: false
+
+# 超时配置
+timeout_config:
+  layer1_timeout: 2.0
+  layer2_timeout: 5.0
+  total_timeout: 10.0
+  per_request_timeout: 8.0
+
+# 重试配置
+retry_config:
+  max_retries: 3
+  retry_delay: 1.0
+  backoff_factor: 2.0
+  retry_on_timeout: true
+  retry_on_error: true
+
+# 监控配置
+monitoring_config:
+  enable_performance_monitoring: true
+  enable_error_tracking: true
+  metrics_retention_hours: 24
+  alert_thresholds:
+    avg_processing_time: 5.0
+    error_rate: 0.1
+    timeout_rate: 0.05
