@@ -1,0 +1,27 @@
+# AlphaSeeker-Bot机器学习引擎依赖包
+
+# 核心机器学习
+lightgbm>=4.0.0
+scikit-learn>=1.0.0
+
+# 数据处理
+pandas>=1.5.0
+numpy>=1.20.0
+scipy>=1.8.0
+
+# 统计分析和检验
+statsmodels>=0.13.0
+
+# 模型持久化
+joblib>=1.2.0
+
+# 可选：图表和可视化
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# 可选：Jupyter支持
+# jupyter>=1.0.0
+# notebook>=6.4.0
+
+# 可选：并行处理
+# multiprocess>=0.70.0
