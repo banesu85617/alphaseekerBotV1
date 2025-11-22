@@ -1,0 +1,230 @@
+# AlphaSeeker主配置文件
+# ====================
+
+# 应用基础配置
+app:
+  name: "AlphaSeeker"
+  version: "1.0.0"
+  description: "AI驱动的加密货币交易信号系统"
+
+# 服务器配置
+server:
+  host: "0.0.0.0"
+  port: 8000
+  reload: false
+  debug: false
+  workers: 1
+
+# 组件配置
+components:
+  # API服务配置
+  api:
+    cors_origins: ["*"]
+    timeout: 30.0
+    max_requests: 1000
+    rate_limit: 100  # requests per minute
+  
+  # 机器学习引擎配置
+  ml_engine:
+    model_config:
+      objective: "multiclass"
+      num_class: 3
+      random_state: 42
+      class_weight: "balanced"
+      num_leaves: 31
+      learning_rate: 0.1
+      feature_fraction: 0.8
+      bagging_fraction: 0.8
+      bagging_freq: 5
+      min_data_in_leaf: 20
+      max_depth: 6
+    
+    risk_config:
+      TAKE_PROFIT_PCT: 0.004      # 止盈4%
+      STOP_LOSS_PCT: 0.004        # 止损4%
+      TRANSACTION_COST_PCT: 0.0005 # 交易成本0.05%
+      MAX_POSITION_SIZE: 1.0      # 最大仓位
+      MAX_DAILY_LOSS: 0.02        # 最大日亏损2%
+      VOLATILITY_BASED_SL: true   # 基于波动的动态止损
+    
+    inference_config:
+      TARGET_LATENCY_MS: 500      # 目标延迟0.5秒
+      ENABLE_CACHING: true        # 启用缓存
+      BATCH_SIZE: 32              # 批量大小
+      PRECISION: "float32"        # 推理精度
+  
+  # 多策略管道配置
+  pipeline:
+    max_concurrent_tasks: 32
+    timeout_seconds: 10.0
+    batch_size: 100
+    
+    # 模型阈值
+    ml_probability_threshold: 0.65
+    ml_confidence_threshold: 0.6
+    llm_confidence_threshold: 0.65
+    
+    # 策略权重
+    strategy_weights:
+      TECHNICAL_INDICATOR: 0.4
+      ML_PREDICTION: 0.2
+      RISK_MODEL: 0.2
+      BACKTEST_REFERENCE: 0.2
+    
+    # 风险控制
+    min_risk_reward_ratio: 1.0
+    max_position_size: 0.1
+    max_leverage: 10.0
+    
+    # 缓存TTL设置
+    cache_ttl:
+      indicators: 300      # 5分钟
+      ml_predictions: 60   # 1分钟
+      llm_assessments: 600 # 10分钟
+      backtest_results: 604800  # 7天
+  
+  # 市场扫描器配置
+  scanner:
+    max_concurrent_tasks: 32
+    scan_timeout: 15.0
+    batch_size: 100
+    enable_cache: true
+    
+    # 扫描策略
+    strategies:
+      - "momentum"
+      - "mean_reversion"
+      - "breakout"
+      - "volume_analysis"
+    
+    # 市场过滤
+    filters:
+      min_volume: 1000000
+      min_market_cap: 10000000
+      exclude_stable_coins: true
+  
+  # 双重验证器配置
+  validation:
+    max_concurrent_tasks: 32
+    
+    # LightGBM第一层配置
+    lgbm_config:
+      model_path: "models/lightgbm_model.txt"
+      probability_threshold: 0.65
+      confidence_threshold: 0.6
+      batch_size: 100
+    
+    # LLM第二层配置
+    llm_config:
+      provider: "ollama"           # ollama, lm_studio, anythingllm
+      base_url: "http://localhost:11434"
+      model_name: "llama2:13b"
+      timeout: 10.0
+      max_retries: 3
+    
+    # 融合算法配置
+    fusion_config:
+      strategy: "adaptive_weight"    # equal_weight, adaptive_weight, performance_based
+      layer1_weight: 0.3
+      layer2_weight: 0.4
+      risk_reward_threshold: 1.2
+
+# 性能配置
+performance:
+  max_concurrent_tasks: 32
+  request_timeout: 30.0
+  batch_size: 100
+  enable_cache: true
+  
+  # 内存管理
+  memory:
+    max_cache_size: 1000  # MB
+    cleanup_interval: 300 # seconds
+  
+  # 监控配置
+  monitoring:
+    enable_metrics: true
+    metrics_interval: 60  # seconds
+    alert_thresholds:
+      cpu_usage: 80       # %
+      memory_usage: 85    # %
+      response_time: 5.0  # seconds
+
+# 日志配置
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+  # 文件日志
+  file:
+    enabled: true
+    filename: "logs/alphaseeker.log"
+    max_size: 100  # MB
+    backup_count: 5
+  
+  # 控制台日志
+  console:
+    enabled: true
+    colored: true
+  
+  # 第三方库日志级别
+  loggers:
+    ccxt: "WARNING"
+    urllib3: "WARNING"
+    aiohttp: "WARNING"
+    lightgbm: "WARNING"
+
+# 数据路径配置
+paths:
+  data_dir: "data"
+  model_dir: "models"
+  log_dir: "logs"
+  cache_dir: "cache"
+  config_dir: "config"
+  
+  # 模型文件
+  models:
+    lightgbm: "models/lightgbm_model.txt"
+    features: "models/feature_config.json"
+    risk: "models/risk_config.json"
+  
+  # 数据文件
+  data:
+    market_data: "data/market_data"
+    training_data: "data/training"
+    backtest_data: "data/backtest"
+
+# 安全配置
+security:
+  # API密钥（如果需要）
+  api_keys: {}
+  
+  # CORS配置
+  cors:
+    allowed_origins: ["*"]
+    allowed_methods: ["GET", "POST", "PUT", "DELETE"]
+    allowed_headers: ["*"]
+  
+  # 请求限制
+  rate_limiting:
+    enabled: true
+    requests_per_minute: 100
+    burst_size: 20
+
+# 环境配置
+environment:
+  development:
+    debug: true
+    log_level: "DEBUG"
+    reload: true
+  
+  production:
+    debug: false
+    log_level: "INFO"
+    reload: false
+    workers: 4
+  
+  testing:
+    debug: false
+    log_level: "WARNING"
+    mock_external_services: true
